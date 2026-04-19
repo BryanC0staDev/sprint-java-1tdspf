@@ -2,7 +2,7 @@
 
 sprint realizada pelos alunos
 
-Igor - RM 
+Igor Blacconaro Santos - RM RM572033
 Bryan Costa Silva - RM569439
-Andrew - RM
-Luis _ RM
+Andrew Rodrigues Lima da Silva - RM569439 
+Luis Henrique Rondão Mendonça - RM RM569797
