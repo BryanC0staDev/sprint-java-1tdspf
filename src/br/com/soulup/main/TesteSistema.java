@@ -37,28 +37,30 @@ public class TesteSistema {
 
 
 //    public Usuario( String nome,int idade,String cpf,String sexo) {
-            Usuario usuario = new Usuario (
+            Usuario objusuario = new Usuario (
                     texto("Digite seu nome: "),
                     inteiro("Digite sua idade: "),
                     texto("Digite seu cpf: "),
                     texto("Digite seu sexo: ")
             );
 
+
             // public Endereco(String logradouro, int numero, String complemento, String cep, String cidade, String estado, String bairro) {
             Endereco endereco = new Endereco(
                     texto("Digite seu Logradouro: "),
                     inteiro("Digite o numero: "),
                     texto("Digite o Complemento: "),
-                    texto("Digite o Cpf: "),
+                    texto("Digite o Cep: "),
                     texto("Digite a sua Cidade: "),
                     texto("Digite seu estado : "),
                     texto("Digite seu bairro: ")
 
             );
-            usuario.setEndereco(endereco);
+            objusuario.setEndereco(endereco);
 
 
-            Menu menu = new Menu();
+            Menu menu = new Menu((objusuario));
+            menu.opcoesMenu();
 
 
             Tabela tabela = new Tabela();

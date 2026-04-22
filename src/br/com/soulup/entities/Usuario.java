@@ -8,7 +8,9 @@ public class Usuario {
     private Endereco endereco;
     private String nome;
 
+
     //Setter e Getters//
+
 
 
     public String getNome() {return nome;}
@@ -57,19 +59,19 @@ public class Usuario {
     public Usuario() {
     }
 
-
     public void cadastro(){
 
         System.out.println(
 
 
 
-        "\n\nUsuario" +
-                "\nNome = " + nome +
-                "\nIdade = " + idade +
-                "\nCpf = " + cpf +
-                "\nSexo =  " + sexo +  endereco
+        "\n\nDados do Usuario" +
+                "\nNome = " + this.nome +
+                "\nIdade = " + this.idade +
+                "\nCpf = " + this.cpf +
+                "\nSexo =  " + this.sexo +  this.endereco
         );
+
     }
 
 
