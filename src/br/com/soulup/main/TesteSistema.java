@@ -1,6 +1,7 @@
 package br.com.soulup.main;
 
 import br.com.soulup.entities.*;
+import br.com.soulup.entities.subEntities.Tabela;
 
 import javax.swing.*;
 

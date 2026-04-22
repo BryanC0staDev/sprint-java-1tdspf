@@ -1,7 +1,7 @@
-package br.com.soulup.entities;
+package br.com.soulup.entities.subEntities;
 
 public class Tabela {
-private int pontos;
+private int pontosUsuario;
 private int posicao;
 private String usuarioexemplo1;
 private String usuarioexemplo2;
@@ -13,11 +13,11 @@ private String usuarioexemplo2;
 
 
         public int getPontos() {
-            return pontos;
+            return pontosUsuario;
         }
 
         public void setPontos(int pontos) {
-            this.pontos = pontos;
+            this. pontosUsuario = pontos;
         }
 
         public int getPosicao() {
