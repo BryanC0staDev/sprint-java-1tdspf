@@ -67,6 +67,33 @@ public class Endereco {
     public void setBairro(String bairro) {
         this.bairro = bairro;
     }
+
+
+    public Endereco() {
+    }
+
+    public Endereco(String logradouro, int numero, String complemento, String cep, String cidade, String estado, String bairro) {
+        this.logradouro = logradouro;
+        this.numero = numero;
+        this.complemento = complemento;
+        this.cep = cep;
+        this.cidade = cidade;
+        this.estado = estado;
+        this.bairro = bairro;
+    }
+
+    @Override
+    public String toString() {
+        return "\n\nEndereco" +
+                "\nLogradouro =" + logradouro +
+                "\nNumero = " + numero +
+                "\nComplemento = " + complemento +
+                "\nCep = " + cep +
+                "\nCidade = " + cidade +
+                "\nEstado = " + estado +
+                "\nBairro = " + bairro ;
+    }
 }
+
 
 

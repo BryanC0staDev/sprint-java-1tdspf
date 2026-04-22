@@ -1,9 +1,6 @@
 package br.com.soulup.main;
 
-import br.com.soulup.entities.Endereco;
-import br.com.soulup.entities.Login;
-import br.com.soulup.entities.Tabela;
-import br.com.soulup.entities.Usuario;
+import br.com.soulup.entities.*;
 
 import javax.swing.*;
 
@@ -30,7 +27,7 @@ public class TesteSistema {
                             "\nSeja Bem Vindo ao Soul Up!" +
                             "\n\nOque é este sistema?:" +
                             "\nEste sistema funciona a base de uma pontuação que aumenta \nde acordo com ações que contribuam para o nosso meio ambiente !"+
-                            "\n\n#####################################\n\n\n ps: dados existentes:\n emailbase@gmail.com,senha: 000"
+                            "\n\n#####################################\n\n\n ps: 'caso se esqueça da senha, apenas cadastre-se novamente!' "
 
             );
 
@@ -38,12 +35,32 @@ public class TesteSistema {
                 login.configuraLogin();
 
 
+//    public Usuario( String nome,int idade,String cpf,String sexo) {
+            Usuario usuario = new Usuario (
+                    texto("Digite seu nome: "),
+                    inteiro("Digite sua idade: "),
+                    texto("Digite seu cpf: "),
+                    texto("Digite seu sexo: ")
+            );
 
-            Usuario usuario = new Usuario();
-            Endereco endereco = new Endereco();
+            // public Endereco(String logradouro, int numero, String complemento, String cep, String cidade, String estado, String bairro) {
+            Endereco endereco = new Endereco(
+                    texto("Digite seu Logradouro: "),
+                    inteiro("Digite o numero: "),
+                    texto("Digite o Complemento: "),
+                    texto("Digite o Cpf: "),
+                    texto("Digite a sua Cidade: "),
+                    texto("Digite seu estado : "),
+                    texto("Digite seu bairro: ")
+
+            );
+            usuario.setEndereco(endereco);
+
+
+            Menu menu = new Menu();
+
+
             Tabela tabela = new Tabela();
-
-
 
 
 

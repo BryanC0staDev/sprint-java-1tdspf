@@ -46,8 +46,8 @@ public class Login {
                     String checkagemsenha = JOptionPane.showInputDialog("Digite sua senha:");
 
 
-                    if ((checkagememail.startsWith(getEmail())) || (checkagemsenha.startsWith(getSenha()))){
-                        System.out.println("\n\nSeja Bem vindo\n\n\n\n  ");
+                    if ((checkagememail.startsWith(getEmail())) && (checkagemsenha.startsWith(getSenha()))){
+                        System.out.println("\n\nSeja Bem vindo\n\n\n\nAgora vamos completar seu Cadastro:\n\n  ");
                         contacriada = true;
                     }
                     else {

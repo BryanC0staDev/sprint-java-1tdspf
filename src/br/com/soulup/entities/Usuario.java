@@ -2,7 +2,7 @@ package br.com.soulup.entities;
 
 public class Usuario {
 
-        private String cpf;
+    private String cpf;
     private int idade;
     private String sexo;
     private Endereco endereco;
@@ -11,17 +11,11 @@ public class Usuario {
     //Setter e Getters//
 
 
-    public String getNome() {
-        return nome;
-    }
+    public String getNome() {return nome;}
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+    public void setNome(String nome) {this.nome = nome;}
 
-    public String getCpf() {
-        return cpf;
-    }
+    public String getCpf() {return cpf;}
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
@@ -35,9 +29,7 @@ public class Usuario {
         this.idade = idade;
     }
 
-    public String getSexo() {
-        return sexo;
-    }
+    public String getSexo() {return sexo;}
 
     public void setSexo(String sexo) {
         this.sexo = sexo;
@@ -51,9 +43,38 @@ public class Usuario {
         this.endereco = endereco;
     }
 
+    //construtores//
+
+    public Usuario( String nome,int idade,String cpf,String sexo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.cpf = cpf;
+        this.sexo = sexo;
+
+    }
+
+
+    public Usuario() {
+    }
+
+
+    public void cadastro(){
+
+        System.out.println(
+
+
+
+        "\n\nUsuario" +
+                "\nNome = " + nome +
+                "\nIdade = " + idade +
+                "\nCpf = " + cpf +
+                "\nSexo =  " + sexo +  endereco
+        );
+    }
 
 
 
 }
+
 
 
