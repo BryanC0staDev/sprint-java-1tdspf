@@ -1,6 +1,6 @@
 package br.com.soulup.entities;
 
-public class Endereco {
+public class Endereco  {
     private  String logradouro;
     private int numero;
     private String complemento;
@@ -92,6 +92,7 @@ public class Endereco {
                 "\nCidade = " + cidade +
                 "\nEstado = " + estado +
                 "\nBairro = " + bairro ;
+
     }
 }
 

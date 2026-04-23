@@ -2,7 +2,7 @@ package br.com.soulup.entities.subEntities;
 
 import javax.swing.*;
 
-public class Missoes {
+public class Missoes  {
     private int pontos;
     private int contadorPontos = 0;
     private int contadorMissoes = 0;
@@ -31,6 +31,7 @@ public class Missoes {
     public void setContadorMissoes(int contadorMissoes) {
         this.contadorMissoes = contadorMissoes;
     }
+
 
 
     public void missoes() {
@@ -80,8 +81,14 @@ public class Missoes {
                     System.out.println("Opção Invalida");
                 }
 
+
+
             }
 
         }
+    }
+    public void contarPontos(){
+        System.out.println("Você tem "+contadorPontos + " pontos!");
+
     }
 }

@@ -36,7 +36,7 @@ public class TesteSistema {
                 login.configuraLogin();
 
 
-//    public Usuario( String nome,int idade,String cpf,String sexo) {
+        //public Usuario( String nome,int idade,String cpf,String sexo) {
             Usuario objusuario = new Usuario (
                     texto("Digite seu nome: "),
                     inteiro("Digite sua idade: "),
@@ -59,13 +59,10 @@ public class TesteSistema {
             objusuario.setEndereco(endereco);
 
 
-            Menu menu = new Menu((objusuario));
-            menu.opcoesMenu();
-
-
             Tabela tabela = new Tabela();
 
-
+            Menu menu = new Menu(objusuario,tabela);
+            menu.opcoesMenu();
 
 
 

@@ -7,15 +7,59 @@ import br.com.soulup.main.TesteSistema;
 import javax.swing.*;
 
 
-public class Menu extends TesteSistema {
-   Tabela tabela;
-   Missoes missoes = new Missoes();
-   int escolha;
-   private Usuario usuario;
+public class Menu  {
+private Tabela tabela = new Tabela();
+private Missoes missoes = new Missoes();
 
-    public Menu (Usuario usuario){
+    int escolha;
+    private Usuario usuario;
+
+
+    //setters e Getters//
+
+
+    public Tabela getTabela() {
+        return tabela;
+    }
+
+    public void setTabela(Tabela tabela) {
+        this.tabela = tabela;
+    }
+
+    public Missoes getMissoes() {
+        return missoes;
+    }
+
+    public void setMissoes(Missoes missoes) {
+        this.missoes = missoes;
+    }
+
+    public int getEscolha() {
+        return escolha;
+    }
+
+    public void setEscolha(int escolha) {
+        this.escolha = escolha;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
+
+
+    //Instanciando Objetos//
+    public Menu (Usuario usuario,Tabela tabela){
+        this.usuario = usuario;
+        this.tabela = tabela;
+
+        tabela.setUsuario(usuario);
+        tabela.setObjMissoes(missoes);
+    }
+
 
 
     public void opcoesMenu(){
@@ -34,8 +78,18 @@ public class Menu extends TesteSistema {
             missoes.missoes();
         } else if (escolha == 2) {
             usuario.cadastro();
+        } else if (escolha == 3) {
+            tabela.setUsuario(usuario);
+            tabela.posicaoTabela();
 
-
+        } else if (escolha == 4) {
+            missoes.contarPontos();
+        }
+        else if (escolha == 5 ){
+            System.out.println("OK, SAINDO!, OBRIGADO POR PARTICIPAR!!!");
+        }
+        else{
+            System.out.println("Opção Invalida!");
         }
     }
     }
