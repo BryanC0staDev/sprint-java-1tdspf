@@ -37,7 +37,7 @@ public class Login {
                 System.out.println("email = " + email);
                 setSenha(JOptionPane.showInputDialog("Digite sua Senha: "));
                 System.out.println("senha = " + senha);
-                System.out.println("Agora faça Login Usando seus dados\n\n");
+                System.out.println("Agora faça Login usando seus dados\n\n");
 
             } else if (escolha == 2) {
 

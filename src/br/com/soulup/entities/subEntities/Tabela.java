@@ -12,7 +12,7 @@ public class Tabela  {
     private int posicao;
     private String usuarioExemplo1 = "Igor Blacconaro Santos";
     private int pontosUsuarioExemplo1 = 4;
-    private String usuarioExemplo2 = "Bryan Costa Silva";
+    private String usuarioExemplo2 = "Luis Rondão";
     private int pontosUsuarioExemplo2 = 5;
     private  String usuarioExemplo3 = "Andrew Rodrigues Lima da Silva";
     private int  pontosUsuarioExemplo3 =6;
@@ -158,7 +158,7 @@ public class Tabela  {
                                 "\n5." + usuarioExemplo4 + " " + pontosUsuarioExemplo4 + " Pontos"
         );
     }else if (pontosUsuario == 0){
-            System.out.println("Voce tem 0 pontos");
+            System.out.println("Voce tem 0 pontos, Pontue para entrar no Ranking!");
         }
     }
 

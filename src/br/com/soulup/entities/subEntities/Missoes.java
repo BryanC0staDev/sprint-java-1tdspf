@@ -40,7 +40,7 @@ public class Missoes  {
                     "Escolha a Missao que deseja Fazer:\n\nobs: apenas é possivel concluir duas missões por dia." +
                             "\n1.Redução de CO2 (transporte publio ou que nao gere combustao) + 2 pontos" +
                             "\n2.Recolher Lixo da Rua + 4 pontos" +
-                            "\n3.Reciclagem + 2 pontos" +
+                            "\n3.Reciclagem + 3 pontos" +
                             "\n4.Economizar água + 2 pontos" +
                             "\nOu Digite 5 para retornar ao menu Principal"
 
@@ -48,10 +48,7 @@ public class Missoes  {
             escolha = Integer.parseInt(JOptionPane.showInputDialog("Digite a missao que deseja concluir"));
 
             if (contadorMissoes == 2) {
-                System.out.println("Voce Atingiu o Limite de Missões! Meus Parabéns");
-                System.out.println("Voltando ao Menu!");
-                escolha = 5;
-
+                System.out.println("Voce Atingiu o Limite de Missões! Meus Parabéns, Retorne amanhã para concluir mais missões!");
 
             } else {
                 if (escolha == 1) {
@@ -65,8 +62,8 @@ public class Missoes  {
                     contadorPontos += pontos;
                     contadorMissoes++;
                 } else if (escolha == 3) {
-                    System.out.println("Parabéns,você conclui a Missão de numero 3!!!  + 2 PONTOS!");
-                    pontos = 2;
+                    System.out.println("Parabéns,você conclui a Missão de numero 3!!!  + 3 PONTOS!");
+                    pontos = 3;
                     contadorPontos += pontos;
                     contadorMissoes++;
                 } else if (escolha == 4) {
