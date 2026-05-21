@@ -38,10 +38,10 @@ public class Missoes  {
         while (escolha != 5) {
             System.out.println(
                     "Escolha a Missao que deseja Fazer:\n\nobs: apenas é possivel concluir duas missões por dia." +
-                            "\n1.Redução de CO2 (transporte publio ou que nao gere combustao) + 2 pontos" +
-                            "\n2.Recolher Lixo da Rua + 4 pontos" +
-                            "\n3.Reciclagem + 3 pontos" +
-                            "\n4.Economizar água + 2 pontos" +
+                            "\n1. Seguir 100 usuários diferentes dentro da plataforma:+ 2 pontos" +
+                            "\n2. Curtir publicações relacionadas à sustentabilidade:+ 4 pontos" +
+                            "\n3. Compartilhar dicas ecológicas no feed do aplicativo:+ 3 pontos" +
+                            "\n4. Criar uma publicação mostrando uma ação sustentável do dia a dia:+ 2 pontos" +
                             "\nOu Digite 5 para retornar ao menu Principal"
 
             );
