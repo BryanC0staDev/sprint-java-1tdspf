@@ -126,7 +126,7 @@ public class Tabela  {
         pontosUsuario = objMissoes.getContadorPontos();
         if ((pontosUsuario >= pontosUsuarioExemplo1) && (pontosUsuario >= pontosUsuarioExemplo2) && (pontosUsuario >= pontosUsuarioExemplo3) && (pontosUsuario>=pontosUsuarioExemplo4)) {
             System.out.println(
-                    "\n1." + usuario.getNome() + " " + pontosUsuario + " Pontos"+
+                    "\n1." + usuario.getNome() + " " + pontosUsuario + " Pontos, Conta de Luz INSENTA!!"+
                             "\n2." + usuarioExemplo3 + " " + pontosUsuarioExemplo3 + " Pontos" +
                             "\n3." + usuarioExemplo2 + " " + pontosUsuarioExemplo2 + " Pontos" +
                             "\n4." + usuarioExemplo1 + " " + pontosUsuarioExemplo1 + " Pontos" +
@@ -135,7 +135,7 @@ public class Tabela  {
         }else if ((pontosUsuario < pontosUsuarioExemplo1) && (pontosUsuario >= pontosUsuarioExemplo2) && (pontosUsuario > pontosUsuarioExemplo3) && (pontosUsuario>pontosUsuarioExemplo4)){
             System.out.println(
                     "\n1." + usuarioExemplo3 + " " + pontosUsuarioExemplo3 + " Pontos" +
-                    "\n2." + usuario.getNome() + " " + pontosUsuario + " Pontos"+
+                    "\n2." + usuario.getNome() + " " + pontosUsuario + " Pontos, Cupons Promo em lojas Parceiiras!!"+
                     "\n3." + usuarioExemplo2 + " " + pontosUsuarioExemplo2 + " Pontos" +
                     "\n4." + usuarioExemplo1 + " " + pontosUsuarioExemplo1 + " Pontos" +
                     "\n5." + usuarioExemplo4 + " " + pontosUsuarioExemplo4 + " Pontos"
@@ -144,7 +144,7 @@ public class Tabela  {
         System.out.println(
                                 "\n1." + usuarioExemplo3 + " " + pontosUsuarioExemplo3 + " Pontos" +
                                 "\n2." + usuarioExemplo2 + " " + pontosUsuarioExemplo2 + " Pontos" +
-                                "\n3." + usuario.getNome() + " " + pontosUsuario + " Pontos" +
+                                "\n3." + usuario.getNome() + " " + pontosUsuario + " Pontos, 20 Reais!!" +
                                 "\n4." + usuarioExemplo1 + " " + pontosUsuarioExemplo1 + " Pontos" +
                                 "\n5." + usuarioExemplo3 + " " + pontosUsuarioExemplo4 + " Pontos"
         );
@@ -154,7 +154,7 @@ public class Tabela  {
                                 "\n1." + usuarioExemplo3 + " " + pontosUsuarioExemplo3 + " Pontos" +
                                 "\n2." + usuarioExemplo2 + " " + pontosUsuarioExemplo2 + " Pontos" +
                                 "\n3." + usuarioExemplo1 + " " + pontosUsuarioExemplo1 + " Pontos" +
-                                "\n4." + usuario.getNome() + " " + pontosUsuario + " Pontos"+
+                                "\n4." + usuario.getNome() + " " + pontosUsuario + " Pontos, 15 reais no Bilhete Unico!"+
                                 "\n5." + usuarioExemplo4 + " " + pontosUsuarioExemplo4 + " Pontos"
         );
     }else if (pontosUsuario == 0){
